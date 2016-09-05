@@ -1,0 +1,8 @@
+### Bootstrap - templates examples ###
+
+**Versiones
+
+jquery-1.12.4.min.js
+bootstrap-3.3.7
+slick - jquery carousel
+
