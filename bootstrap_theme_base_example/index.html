@@ -70,7 +70,8 @@
           </ul>
         </div>
       </div>
-    </nav><!-- End navbar -->
+    </nav>
+    <!-- End navbar -->
 
     <div class="container theme-showcase" role="main">
 
@@ -79,7 +80,8 @@
       <div class="jumbotron">
         <h1>Theme example</h1>
         <p>This is a template showcasing the optional theme stylesheet included in Bootstrap. Use it as a starting point to create something more unique by building on or modifying it.</p>
-      </div><!-- End jumbotron -->
+      </div>
+      <!-- End jumbotron -->
 
 
       <div class="page-header">
@@ -411,7 +413,8 @@
             </ul>
           </div>
         </div>
-      </nav><!-- end navbar-default -->
+      </nav>
+      <!-- end navbar-default -->
 
       <!-- navbar-inverse
       ================================================== -->
@@ -446,7 +449,8 @@
             </ul>
           </div>
         </div>
-      </nav><!-- End navbar-inverse -->
+      </nav>
+      <!-- End navbar-inverse -->
 
 
       <div class="page-header">
@@ -604,8 +608,148 @@
       ================================================== -->
       <div class="well">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sed diam eget risus varius blandit sit amet non magna. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna, vel scelerisque nisl consectetur et. Cras mattis consectetur purus sit amet fermentum. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Aenean lacinia bibendum nulla sed consectetur.</p>
-      </div> <!-- End well -->
+      </div>
+      <!-- End well -->
 
+      <hr />
+
+      <!-- fadeIn - fadeOut
+      ================================================== -->
+      <script type="text/javascript">
+      $(document).ready(function(){
+          $(".btn1").click(function(){
+              $("p").fadeOut()
+          });
+          $(".btn2").click(function(){
+              $("p").fadeIn();
+          });
+      });
+      </script>
+      <p>This is a paragraph.</p>
+      <button class="btn1">Fade out</button>
+      <button class="btn2">Fade in</button>
+      <!-- fadeIn - fadeOut end -->
+
+      <hr />
+
+      <!-- Collapsible Panel
+      ================================================== -->
+      <h2>Collapsible Panel</h2>
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <div class="panel-body">Panel Body</div>
+            <div class="panel-footer">Panel Footer</div>
+          </div>
+        </div>
+      </div>
+      <!-- Collapsible Panel end -->
+
+      <hr />
+
+      <!-- Collapsible List Group
+      ================================================== -->
+      <h2>Collapsible List Group</h2>
+      <div class="panel-group">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" href="#collapse1">Collapsible list group</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse">
+            <ul class="list-group">
+              <li class="list-group-item">One</li>
+              <li class="list-group-item">Two</li>
+              <li class="list-group-item">Three</li>
+            </ul>
+            <div class="panel-footer">Footer</div>
+          </div>
+        </div>
+      </div>
+      <!-- Collapsible List Group Panel end -->
+
+      <hr />
+
+      <!-- Accordion Panel Example
+      ================================================== -->
+      <h2>Accordion Example</h2>
+      <div class="panel-group" id="accordion">
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">Collapsible Group 1</a>
+            </h4>
+          </div>
+          <div id="collapse1" class="panel-collapse collapse in">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">Collapsible Group 2</a>
+            </h4>
+          </div>
+          <div id="collapse2" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-heading">
+            <h4 class="panel-title">
+              <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">Collapsible Group 3</a>
+            </h4>
+          </div>
+          <div id="collapse3" class="panel-collapse collapse">
+            <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+          </div>
+        </div>
+      </div>
+      <!-- Accordion Panel Example end -->
+
+      <hr />
+
+      <!-- Dynamic Tabs Example
+      ================================================== -->
+      <h2>Dynamic Tabs</h2>
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+        <li><a data-toggle="tab" href="#menu1">Menu 1</a></li>
+        <li><a data-toggle="tab" href="#menu2">Menu 2</a></li>
+        <li><a data-toggle="tab" href="#menu3">Menu 3</a></li>
+      </ul>
+
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <h3>HOME</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+          <h3>Menu 3</h3>
+          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
+      <!-- Dynamic Tabs Example end -->
 
       <div class="page-header">
         <h1>Carousel</h1>
@@ -637,7 +781,8 @@
           <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
           <span class="sr-only">Next</span>
         </a>
-      </div><!-- End Carousel -->
+      </div>
+      <!-- End Carousel -->
 
       <!-- slick carousel
       ================================================== -->
@@ -676,7 +821,8 @@
       </script>
       <!-- End slick carousel -->
 
-    </div> <!-- /container -->
+    </div>
+    <!-- container end -->
 
     <!-- Fixed navbar
     ================================================== -->
@@ -711,7 +857,8 @@
           </ul>
         </div>
       </div>
-    </nav><!-- End navbar -->
+    </nav>
+    <!-- End navbar -->
     
   </body>
 </html>
