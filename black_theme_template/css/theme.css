@@ -1,0 +1,40 @@
+body {
+  padding-top: 70px;
+  padding-bottom: 30px;
+  background: #333;
+  color: #FFFFFF;
+}
+
+.theme-dropdown .dropdown-menu {
+  position: static;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.theme-showcase > p > .btn {
+  margin: 5px 0;
+}
+
+.theme-showcase .navbar .container {
+  width: auto;
+}
+
+.navbar {
+  /*border: none;*/
+  background: #000000;
+  -webkit-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.75);
+  box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.75);
+}
+
+.well-black {
+  min-height: 20px;
+  padding: 19px;
+  margin-bottom: 20px;
+  background-color: #000000;
+  border: 1px solid #000000;
+  border-radius: 0px;
+  -webkit-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.75);
+  box-shadow: -1px 0px 5px 2px rgba(0,0,0,0.75);
+}
